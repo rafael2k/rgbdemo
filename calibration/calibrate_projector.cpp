@@ -507,7 +507,7 @@ int main(int argc, char** argv)
 	cv::namedWindow("corners");
 
 	context.images_dir = QDir(context.opt_image_directory());
-	ntk_ensure(context.images_dir.exists(), (context.images_dir.absolutePath() + " is not a directory.").toAscii());
+	ntk_ensure(context.images_dir.exists(), (context.images_dir.absolutePath() + " is not a directory.").toLatin1());
     context.images_list = context.images_dir.entryList(QStringList("view????*"), QDir::Dirs, QDir::Name);
 	
 	RGBDCalibration calib;

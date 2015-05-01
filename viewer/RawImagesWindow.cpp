@@ -185,5 +185,5 @@ void RawImagesWindow::on_actionSave_calibration_parameters_triggered()
                                                   QString("calibration.yml"));
   if (filename.isEmpty())
      return;
-  m_controller.lastImage().calibration()->saveToFile(filename.toAscii());
+  m_controller.lastImage().calibration()->saveToFile(filename.toLatin1());
 }

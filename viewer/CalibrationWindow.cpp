@@ -147,5 +147,5 @@ void CalibrationWindow::on_saveCalibrationButton_clicked()
                                                     QString("calibration-%1.yml").arg(controller.lastImage().cameraSerial().c_str()));
     if (filename.isEmpty())
        return;
-    last_calibration.saveToFile(filename.toAscii());
+    last_calibration.saveToFile(filename.toLatin1());
 }

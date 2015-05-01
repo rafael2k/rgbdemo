@@ -390,5 +390,5 @@ void GuiController :: saveModel(int obj_id)
     QString filename = QFileDialog::getSaveFileName(modelAcquisitionWindow(),
                                                     "Save model as...",
                                                     QString("object1.model"));
-    saveSingleViewModel(filename.toAscii(), m_model_image, m_objects[obj_id].mesh);
+    saveSingleViewModel(filename.toLatin1(), m_model_image, m_objects[obj_id].mesh);
 }

@@ -104,6 +104,12 @@
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="ntk::MeshViewer" name="mesh_view" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>783</width>
+           <height>468</height>
+          </size>
+         </property>
          <property name="focusPolicy">
           <enum>Qt::ClickFocus</enum>
          </property>

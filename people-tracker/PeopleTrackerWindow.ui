@@ -156,6 +156,12 @@
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="ntk::MeshViewer" name="mesh_view" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>435</width>
+           <height>415</height>
+          </size>
+         </property>
          <layout class="QHBoxLayout" name="horizontalLayout_5"/>
         </widget>
        </item>

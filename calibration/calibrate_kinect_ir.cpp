@@ -487,7 +487,7 @@ int main(int argc, char** argv)
     namedWindow("corners");
 
     global::images_dir = QDir(global::opt_image_directory());
-    ntk_ensure(global::images_dir.exists(), (global::images_dir.absolutePath() + " is not a directory.").toAscii());
+    ntk_ensure(global::images_dir.exists(), (global::images_dir.absolutePath() + " is not a directory.").toLatin1());
     ntk_dbg_print(global::images_dir.dirName(), 1);
     global::images_list = global::images_dir.entryList(QStringList("view????*"), QDir::Dirs, QDir::Name);
     if (global::images_list.size() < 1)

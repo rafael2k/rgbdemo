@@ -144,7 +144,7 @@ int main(int argc, char** argv)
     global::initial_focal_length = global::calibration.rgb_pose->focalX();
 
     global::images_dir = QDir(global::opt_image_directory());
-    ntk_ensure(global::images_dir.exists(), (global::images_dir.absolutePath() + " is not a directory.").toAscii());
+    ntk_ensure(global::images_dir.exists(), (global::images_dir.absolutePath() + " is not a directory.").toLatin1());
 
     global::images_list = global::images_dir.entryList(QStringList("view????*"), QDir::Dirs, QDir::Name);
 
