@@ -32,7 +32,7 @@
 
 #include <ntk/geometry/incremental_pose_estimator_from_markers.h>
 
-#include <QtConcurrentRun>
+#include <QtConcurrent/QtConcurrentRun>
 
 using namespace ntk;
 using namespace cv;

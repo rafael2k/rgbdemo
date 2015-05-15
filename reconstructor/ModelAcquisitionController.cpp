@@ -27,7 +27,7 @@
 #include <ntk/geometry/pose_3d.h>
 #include <ntk/mesh/mesh_viewer.h>
 
-#include <QtConcurrentRun>
+#include <QtConcurrent/QtConcurrentRun>
 
 using namespace ntk;
 using namespace cv;
